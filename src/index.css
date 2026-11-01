@@ -1,0 +1,77 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+:root {
+  font-family: "DM Sans", Arial, sans-serif;
+  color: #242b33;
+  background: #eef1f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --page-bg: #eef1f4;
+  --panel-bg: #ffffff;
+  --text-main: #242b33;
+  --text-muted: #707985;
+  --border: #dce1e6;
+  --accent: #263f56;
+  --accent-hover: #1c3144;
+  --soft-bg: #f6f8fa;
+  --danger: #a33e3e;
+  --mono: "IBM Plex Mono", Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 3px solid #9bb7d0;
+  outline-offset: 2px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  color: var(--text-main);
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  color: #ffffff;
+  background: #526f89;
+}
