@@ -3,7 +3,7 @@ import hero from '../assets/hero.png';
 import negro from '../assets/negro.png';
 
 const servicios = [
-  { nombre: 'soldado', imagen: '/imagenes/soldado.png', id: 'soldado' },
+  { nombre: 'seguridad', imagen: '/imagenes/soldado.png', id: 'seguridad' },
   { nombre: 'cientificos', imagen: '/imagenes/cientificos.png', id: 'cientificos' },
   { nombre: 'apollos', imagen: hero, id: 'apollos' },
 ];
