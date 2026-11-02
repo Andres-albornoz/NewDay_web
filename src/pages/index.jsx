@@ -3,9 +3,21 @@ import hero from '../assets/hero.png';
 import negro from '../assets/negro.png';
 
 const servicios = [
-  { nombre: 'seguridad', imagen: '/imagenes/soldado.png', id: 'seguridad' },
-  { nombre: 'cientificos', imagen: '/imagenes/cientificos.png', id: 'cientificos' },
-  { nombre: 'apollos', imagen: hero, id: 'apollos' },
+  {
+    nombre: 'seguridad',
+    imagen: `${import.meta.env.BASE_URL}imagenes/soldado.png`,
+    id: 'seguridad'
+  },
+  {
+    nombre: 'cientificos',
+    imagen: `${import.meta.env.BASE_URL}imagenes/cientificos.png`,
+    id: 'cientificos'
+  },
+  {
+    nombre: 'apollos',
+    imagen: hero,
+    id: 'apollos'
+  },
 ];
 
 function Index() {
