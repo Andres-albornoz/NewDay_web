@@ -1,15 +1,16 @@
 import { Link } from 'react-router';
+import { imagen } from '../core/imagenes.js';
 
 const programas_apollo = [
   {
-    nombre: 'tiros',
-    imagen: './imagenes/tiros.png',
-    texto: 'entrenamiento de tiro y defensa personal'
+    nombre: 'acompañamiento',
+    imagen: imagen('acompañamiento.png'),
+    texto: 'Acompañamiento y apoyo grupal'
   },
   {
-    nombre: 'soldados',
-    imagen: './imagenes/soldados.png',
-    texto: 'entrenamiento como soldados y policias'
+    nombre: 'capacitación',
+    imagen: imagen('capacitación.png'),
+    texto: 'Formación y preparación laboral'
   },
 ];
 
@@ -18,7 +19,7 @@ function Apollo() {
     <>
       <section className="banner-container">
         <Link to="/nosotros">
-          <img src="./imagenes/Seguridad.png" alt="fondo" />
+          <img src={imagen('apollo.png')} alt="fondo" />
         </Link>
 
         <div>
@@ -38,21 +39,20 @@ function Apollo() {
       <div className="encabezado">Programas</div>
 
       <div>    
-        Como parte de esta iniciativa, la Fundación ofrece financiamiento
-        para proyectos de investigación científica y tecnológica, tanto a 
-        instituciones como a individuos. <br/>
-        Asimismo, dispone de programas de preparación y formación cientificas
-        y tecnologicas para quienes deseen explorar estas displinas o adquirir
-        conocimientos en estas áreas.
+        Como parte de esta iniciativa, la Fundación ofrece programas de asistencia
+        y acompañamiento para aquellos ciudadanos que se encuentren atravesando 
+        dificultades personales, sociales o económicas. Estos programas buscan 
+        proporcionar orientación, recursos y oportunidades que les permitan superar
+        sus circunstancias y mejorar su calidad de vida.
 
         <br/>
         <br/>
 
-        Estos programas buscan brindar apoyo y oportunidades a los ciudadanos
-        interesados en formar parte de las instituciones de investigación, al 
-        mismo tiempo que fomentan una comunidad más conocedores, intelectuales
-        y cultos con el objetivo de potenciar el avanse de la ciudad y la
-        comunidad de NewDay.
+        Asimismo, dispone de programas de rehabilitación, formación y preparación
+        laboral destinados a ciudadanos condenados a penas de encarcelamiento o 
+        internados en reformatorios, ofreciéndoles alternativas para cumplir sus 
+        condenas mediante actividades formativas y de contribución a la comunidad, 
+        cuando sea posible.
       </div>
 
       <div className="servicios-grid">

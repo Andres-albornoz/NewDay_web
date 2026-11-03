@@ -1,14 +1,15 @@
 import { Link } from 'react-router';
+import { imagen } from '../core/imagenes.js';
 
 const programas_Investigacion = [
   {
     nombre: 'Investigacion',
-    imagen: './imagenes/investigacion.png',
+    imagen: imagen('investigacion.png'),
     texto: 'apollo y financiamiento de proyectos de investigación'
   },
   {
     nombre: 'formacion',
-    imagen: './imagenes/formacion.png',
+    imagen: imagen('formacion.png'),
     texto: 'formacion y educacion cientifica y tecnologica'
   },
 ];
@@ -18,7 +19,7 @@ function Investigacion() {
     <>
       <section className="banner-container">
         <Link to="/nosotros">
-          <img src="./imagenes/cientifico.png" alt="fondo" />
+          <img src={imagen('cientifico.png')} alt="fondo" />
         </Link>
 
         <div>

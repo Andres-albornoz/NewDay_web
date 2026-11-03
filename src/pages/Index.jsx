@@ -1,19 +1,20 @@
 import { Link } from 'react-router';
+import { imagen } from '../core/imagenes.js';
 
 const servicios = [
   {
     nombre: 'Seguridad',
-    imagen: './imagenes/Seguridad.png',
-    enlace: '/seguridad'
+    imagen: imagen('Seguridad.png'),
+    enlace: '/Seguridad'
   },
   {
     nombre: 'Investigacion',
-    imagen: './imagenes/cientifico.png',
+    imagen: imagen('cientifico.png'),
     enlace: '/Investigacion'
   },
   {
     nombre: 'Apollo',
-    imagen: './imagenes/Apollo.png',
+    imagen: imagen('apollo.png'),
     enlace: '/Apollo'
   },
 ];
@@ -21,9 +22,9 @@ const servicios = [
 function Index() {
   return (
     <>
-      <section className="banner-container">
+      <section className="banner-container banner-institucional">
         <Link to="/nosotros">
-          <img src="./imagenes/negro.png" alt="fondo" />
+          <img src={imagen('negro.png')} alt="fondo" />
         </Link>
 
         <div>

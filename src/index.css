@@ -178,6 +178,7 @@ a:focus-visible {
 
 .site > header nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   gap: 5px;
   max-width: 100%;
@@ -187,7 +188,7 @@ a:focus-visible {
 
 .site > header nav a {
   display: inline-block;
-  padding: 9px 18px 10px;
+  padding: 9px 14px 10px;
   color: #eaf2f8;
   background: linear-gradient(180deg, #336c9e 0%, #22547f 48%, #1a4468 100%);
   border: 1px solid #0c2a46;
@@ -195,7 +196,7 @@ a:focus-visible {
   border-radius: 3px 3px 0 0;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22);
   font-family: var(--sans);
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.4px;
@@ -215,6 +216,39 @@ a:focus-visible {
     inset 0 2px 0 var(--gold),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
   text-decoration: none;
+}
+
+/* Consulta rapida de IMC integrada en la barra de navegacion */
+.site > header nav input {
+  width: 142px;
+  height: 32px;
+  flex-shrink: 0;
+  margin: 0 0 1px 3px;
+  padding: 4px 8px;
+  color: var(--text-main);
+  background: #f7fafc;
+  border: 1px solid #0c2a46;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 3px rgba(8, 29, 49, 0.35);
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.site > header nav input::placeholder {
+  color: #6d7d8b;
+  opacity: 1;
+}
+
+.site > header nav input:focus {
+  border-color: var(--gold);
+  outline: none;
+  box-shadow:
+    inset 0 1px 3px rgba(8, 29, 49, 0.35),
+    0 0 0 2px rgba(201, 162, 39, 0.45);
 }
 
 /* ------------------------------------------------------------
@@ -295,7 +329,28 @@ a:focus-visible {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  opacity: 0.92;
+}
+
+/* Portada sin fotografia: el PNG negro se usa solo como textura tenue. */
+.banner-container.banner-institucional img {
   opacity: 0.16;
+}
+
+/* Banda de cierre que separa el contenido de la seccion de inscripcion. */
+.banner-container:empty {
+  height: 16px;
+  margin: 30px 0 28px;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.08) 0 3px,
+      transparent 3px 9px
+    ),
+    linear-gradient(180deg, #1a4c7a 0%, #0d2c4a 100%);
+  border: 1px solid #0a1e33;
+  border-top: 4px solid var(--gold);
+  box-shadow: 0 1px 3px rgba(13, 37, 60, 0.25);
 }
 
 .banner-container > div {
@@ -309,6 +364,10 @@ a:focus-visible {
 
 .banner-container > div p {
   margin: 10px 0;
+}
+
+.banner-container > div strong {
+  color: #f1d77a;
 }
 
 /* ------------------------------------------------------------
@@ -358,6 +417,37 @@ a:focus-visible {
   line-height: 1.8;
 }
 
+/* Campos de consulta dentro de las cajas de contenido */
+.site > main label {
+  display: inline-block;
+  margin: 6px 6px 4px 0;
+  color: #274a66;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.site > main input#IMC {
+  display: inline-block;
+  width: min(240px, 100%);
+  min-height: 32px;
+  padding: 5px 9px;
+  color: var(--text-main);
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  box-shadow: inset 0 1px 3px rgba(15, 40, 64, 0.12);
+  font-family: var(--sans);
+  font-size: 12.5px;
+}
+
+.site > main input#IMC:focus {
+  border-color: var(--accent-light);
+  outline: none;
+  box-shadow:
+    inset 0 1px 3px rgba(15, 40, 64, 0.12),
+    0 0 0 2px rgba(47, 110, 168, 0.28);
+}
+
 /* ------------------------------------------------------------
    Rejilla de programas / servicios
    ------------------------------------------------------------ */
@@ -374,7 +464,7 @@ a:focus-visible {
   flex-direction: column;
   overflow: hidden;
   color: #123a5e;
-  background: #ffffff;
+  background: linear-gradient(180deg, #fbfcfe 0%, #edf2f7 100%);
   border: 1px solid #b6c5d2;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(16, 42, 66, 0.12);
@@ -422,24 +512,10 @@ a:focus-visible {
   object-fit: cover;
 }
 
-/* La pieza de apollos es un recorte con fondo transparente: se muestra
-   completa y sobre un fondo oscuro para que contraste con el marco. */
-.servicio-card:has(img[alt="apollos"]) .imagenes_cuadradas {
-  background:
-    radial-gradient(circle at 50% 46%, rgba(201, 162, 39, 0.18) 0 30%, transparent 31%),
-    linear-gradient(135deg, #243a58 0%, #142b45 60%, #0d2137 100%);
-}
-
-.servicio-card img[alt="apollos"] {
-  padding: 10px;
-  object-fit: contain;
-}
-
 .servicio-card > span {
   display: block;
-  padding: 12px 14px 13px;
+  padding: 12px 14px 4px;
   color: #123a5e;
-  background: linear-gradient(180deg, #fbfcfe 0%, #edf2f7 100%);
   border-top: 1px solid #dbe4ec;
   font-family: var(--serif);
   font-size: 15.5px;
@@ -450,10 +526,27 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
-.servicio-card:hover > span,
-.servicio-card:focus-visible > span {
+/* Segunda linea de las tarjetas: descripcion breve del programa. */
+.servicio-card > span:first-of-type + span {
+  padding: 3px 14px 14px;
+  color: var(--text-muted);
+  border-top: 0;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.55;
+  text-transform: none;
+}
+
+/* Las tarjetas de portada solo tienen titulo. */
+.servicio-card > span:only-of-type {
+  padding-bottom: 13px;
+}
+
+.servicio-card:hover > span:first-of-type,
+.servicio-card:focus-visible > span:first-of-type {
   color: #0a2f50;
-  background: linear-gradient(180deg, #ffffff 0%, #e4edf5 100%);
 }
 
 /* ------------------------------------------------------------
@@ -540,6 +633,10 @@ a:focus-visible {
     flex-basis: 100%;
   }
 
+  .site > header nav input {
+    width: 132px;
+  }
+
   .site > main {
     padding: 24px 20px 36px;
   }
@@ -584,6 +681,13 @@ a:focus-visible {
     border-top: 1px solid #0c2a46;
   }
 
+  .site > header nav input {
+    width: 100%;
+    height: 36px;
+    margin: 8px 0 10px;
+    font-size: 13px;
+  }
+
   .site > main {
     padding: 20px 14px 32px;
   }
@@ -613,6 +717,15 @@ a:focus-visible {
 
   .servicios-grid {
     gap: 16px;
+  }
+
+  .site > main input#IMC {
+    width: 100%;
+  }
+
+  .banner-container:empty {
+    height: 12px;
+    margin: 24px 0 22px;
   }
 
   .imagenes_cuadradas {

@@ -33,8 +33,8 @@ jobs:
 
       - name: Build
         run: npm run build
-        # GITHUB_ACTIONS=true lo pone la plataforma, así que vite.config.js
-        # aplica automáticamente base: '/NewDay_web/'.
+        # En Actions, vite.config.js deriva la base del nombre del repositorio
+        # (por ejemplo '/NewDay_web/') para publicar correctamente en Pages.
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

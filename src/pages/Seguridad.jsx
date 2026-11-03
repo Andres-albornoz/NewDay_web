@@ -1,14 +1,15 @@
 import { Link } from 'react-router';
+import { imagen } from '../core/imagenes.js';
 
 const programas = [
   {
     nombre: 'tiros',
-    imagen: './imagenes/tiros.png',
+    imagen: imagen('tiros.png'),
     texto: 'entrenamiento de tiro y defensa personal'
   },
   {
     nombre: 'soldados',
-    imagen: './imagenes/soldados.png',
+    imagen: imagen('soldados.png'),
     texto: 'entrenamiento como soldados y policias'
   },
 ];
@@ -18,7 +19,7 @@ function Seguridad() {
     <>
       <section className="banner-container">
         <Link to="/nosotros">
-          <img src="./imagenes/Seguridad.png" alt="fondo" />
+          <img src={imagen('Seguridad.png')} alt="fondo" />
         </Link>
 
         <div>

@@ -13,7 +13,12 @@ function Layout() {
           <NavLink to="/Seguridad">Seguridad</NavLink> |
           <NavLink to="/Investigacion">Investigacion</NavLink> |
           <NavLink to="/Apollo">Apollo</NavLink> |
-          <input type="text" id="IMC" placeholder="Escribe tu IMC"></input>
+          <input
+            type="text"
+            id="IMC-consulta"
+            aria-label="Consultar IMC"
+            placeholder="Escribe tu IMC"
+          />
           |
         </nav>
       </header>
