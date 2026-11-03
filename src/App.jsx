@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router'
 import Layout from './core/Layout.jsx'
-import Index from './pages/index.jsx'
-import seguridad from './pages/seguridad.jsx'
+import Index from './pages/Index.jsx'
+import Seguridad from './pages/Seguridad.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -9,8 +9,7 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Index />} />
-        <Route path="Index" element={<Index />} />
-        <Route path="seguridad" element={<seguridad />} />
+        <Route path="Seguridad" element={<Seguridad />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

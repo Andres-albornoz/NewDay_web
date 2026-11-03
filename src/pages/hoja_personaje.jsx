@@ -1,4 +1,4 @@
-function hoja_personaje() {
+function Hoja_personaje() {
   return (
     <div>
       <h1>Hoja de Personaje</h1>
@@ -6,4 +6,4 @@ function hoja_personaje() {
     </div>
   );
 }
-export default hoja_personaje;
+export default Hoja_personaje;

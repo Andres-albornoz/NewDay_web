@@ -1,47 +1,87 @@
 import { Link } from 'react-router';
-import hero from '../assets/hero.png';
-import negro from '../assets/negro.png';
 
 const servicios = [
-  { nombre: 'soldado', imagen: '/imagenes/soldado.png', id: 'soldado' },
-  { nombre: 'cientificos', imagen: '/imagenes/cientificos.png', id: 'cientificos' },
-  { nombre: 'apollos', imagen: hero, id: 'apollos' },
+  {
+    nombre: 'tiros',
+    imagen: './imagenes/tiros.png',
+    texto: 'entrenamiento de tiro y defensa personal'
+  },
+  {
+    nombre: 'soldados',
+    imagen: './imagenes/soldados.png',
+    texto: 'entrenamiento como soldados y policias'
+  },
 ];
-function seguridad() {
+
+function Seguridad() {
   return (
     <>
-        <section className="banner-container">
-            <Link to="/nosotros">
-            <img src={negro} alt="fondo" />
-            </Link>
-
-            <div>
-                La Fundacion de NewDay es un grupo centrado en el apollo y salvacion de la ciudad de NewDay, mediante progrmas de seguridad, investigacion y reformacion, 
-                para mantener y asegurar la seguridad, bienestar y orden de todos los ciudadanos<p/>
-            </div>  
-        </section>
-
-        
-
-        <div className="encabezado">progrmas</div>
+      <section className="banner-container">
+        <Link to="/nosotros">
+          <img src="./imagenes/seguridad.png" alt="fondo" />
+        </Link>
 
         <div>
-            en la fundacion de NewDay sabemos la inportancia de las oportunidades y las opciones para el desarrollo de los ciudadanos por esto nosotros ofresemos tres
-            programas de seguridad, investigacion y reformacion para el desarrollo de la ciudad y sus ciudadanos, cada uno de estos programas tiene un objetivo y una meta,
-            hacegurar el mejor futuro para la ciudad y sus ciudadanos
+          En la Fundación NewDay somos conscientes de la creciente necesidad
+          de seguridad dentro de nuestra comunidad y en toda la ciudad de
+          NewDay. Asimismo, reconocemos el interés de muchos ciudadanos en
+          contribuir activamente a la protección de su entorno. Por este
+          motivo, hemos creado la Iniciativa de Seguridad de la Fundación
+          NewDay, destinada a promover la formación y participación ciudadana
+          en materia de seguridad.
+        </div>
+        </section>
+
+        <div className="encabezado">Programas</div>
+
+        <div>
+          Como parte de esta iniciativa, la Fundación ofrece programas de
+          formación en tiro y defensa personal abiertos a todos los ciudadanos.
+          Asimismo, dispone de programas de preparación y formación policial
+          y militar para quienes deseen incorporarse a las fuerzas del orden
+          y contribuir directamente a la seguridad de nuestra ciudad.
+
+          <br></br>
+          <br></br>
+
+          Estos programas buscan brindar apoyo y oportunidades a los ciudadanos
+          interesados en formar parte de las instituciones de seguridad,
+          al mismo tiempo que fomentan una comunidad más responsable,
+          preparada y comprometida con el cumplimiento de las leyes y la
+          protección de NewDay.
         </div>
 
-        <div className="servicios-grid">
-            {servicios.map((servicio) => (
-            <Link key={servicio.id} to={`/servicios/${servicio.id}`} className="servicio-card">
-                <div className="imagenes_cuadradas">
-                <img src={servicio.imagen} alt={servicio.nombre} />
-                </div>
-                <span>{servicio.nombre}</span>
-            </Link>
-            ))}
+      <div className="servicios-grid">
+        {servicios.map((servicios) => (
+          <div
+            className="servicio-card"
+          >
+            <div className="imagenes_cuadradas">
+              <img src={servicios.imagen} alt={servicios.nombre} />
+            </div>
+
+            <span>{servicios.nombre}</span>
+            <span>{servicios.texto}</span>
+          </div>
+        ))}
+      </div>
+
+      
+      <section className="banner-container"></section>
+
+        <div className="encabezado">Inscripción</div>
+
+        <div>
+          Si desea obtener más información sobre nuestros programas de seguridad
+          o formalizar su inscripción, ingrese su NMC en el siguiente campo.
+          Un representante de la Fundación se pondrá en contacto con usted
+          para brindarle asistencia y continuar con el proceso correspondiente.
         </div>
+
+        <label for="NMC">NMC:</label>
+        <input type="text" id="NMC" placeholder="Escribe tu NMC"></input>
     </>
   );
 }
-export default seguridad;
+
+export default Seguridad;
