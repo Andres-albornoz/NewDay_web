@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router';
 
 const servicios = [
@@ -30,56 +31,56 @@ function Seguridad() {
           NewDay, destinada a promover la formación y participación ciudadana
           en materia de seguridad.
         </div>
-        </section>
+      </section>
 
-        <div className="encabezado">Programas</div>
+      <div className="encabezado">Programas</div>
 
-        <div>
-          Como parte de esta iniciativa, la Fundación ofrece programas de
-          formación en tiro y defensa personal abiertos a todos los ciudadanos.
-          Asimismo, dispone de programas de preparación y formación policial
-          y militar para quienes deseen incorporarse a las fuerzas del orden
-          y contribuir directamente a la seguridad de nuestra ciudad.
+      <div>
+        Como parte de esta iniciativa, la Fundación ofrece programas de
+        formación en tiro y defensa personal abiertos a todos los ciudadanos.
+        Asimismo, dispone de programas de preparación y formación policial
+        y militar para quienes deseen incorporarse a las fuerzas del orden
+        y contribuir directamente a la seguridad de nuestra ciudad.
 
-          <br></br>
-          <br></br>
+        <br></br>
+        <br></br>
 
-          Estos programas buscan brindar apoyo y oportunidades a los ciudadanos
-          interesados en formar parte de las instituciones de seguridad,
-          al mismo tiempo que fomentan una comunidad más responsable,
-          preparada y comprometida con el cumplimiento de las leyes y la
-          protección de NewDay.
-        </div>
+        Estos programas buscan brindar apoyo y oportunidades a los ciudadanos
+        interesados en formar parte de las instituciones de seguridad,
+        al mismo tiempo que fomentan una comunidad más responsable,
+        preparada y comprometida con el cumplimiento de las leyes y la
+        protección de NewDay.
+      </div>
 
       <div className="servicios-grid">
-        {servicios.map((servicios) => (
+        {servicios.map((servicio) => (
           <div
+            key={servicio.nombre}
             className="servicio-card"
           >
             <div className="imagenes_cuadradas">
-              <img src={servicios.imagen} alt={servicios.nombre} />
+              <img src={servicio.imagen} alt={servicio.nombre} />
             </div>
 
-            <span>{servicios.nombre}</span>
-            <span>{servicios.texto}</span>
+            <span>{servicio.nombre}</span>
+            <span>{servicio.texto}</span>
           </div>
         ))}
       </div>
 
-      
       <section className="banner-container"></section>
 
-        <div className="encabezado">Inscripción</div>
+      <div className="encabezado">Inscripción</div>
 
-        <div>
-          Si desea obtener más información sobre nuestros programas de seguridad
-          o formalizar su inscripción, ingrese su NMC en el siguiente campo.
-          Un representante de la Fundación se pondrá en contacto con usted
-          para brindarle asistencia y continuar con el proceso correspondiente.
-        </div>
+      <div>
+        Si desea obtener más información sobre nuestros programas de seguridad
+        o formalizar su inscripción, ingrese su NMC en el siguiente campo.
+        Un representante de la Fundación se pondrá en contacto con usted
+        para brindarle asistencia y continuar con el proceso correspondiente.
+      </div>
 
-        <label for="NMC">NMC:</label>
-        <input type="text" id="NMC" placeholder="Escribe tu NMC"></input>
+      <label htmlFor="NMC">NMC:</label>
+      <input type="text" id="NMC" placeholder="Escribe tu NMC"></input>
     </>
   );
 }
