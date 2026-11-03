@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 
-const programas = [
+const programas_apollo = [
   {
     nombre: 'tiros',
     imagen: './imagenes/tiros.png',
@@ -22,12 +22,16 @@ function Apollo() {
         </Link>
 
         <div>
-            En la Fundación NewDay creemos en la ciencia como pilar fundamental
-            para el crecimiento y avance de nuestra sociedad. Por ello, creamos 
-            la <strong>Iniciativa de Investigación de la Fundación NewDay</strong> 
-            destinada a promover la investigación científica y tecnológica en
-            diversas áreas mediante el apoyo y la educación de jóvenes y adultos
-            interesados en la ciencia y la tecnología.
+            En la Fundación NewDay sabemos de las dificultades y peligros que
+            pueden llegar a tener muchos de nuestros ciudadanos, lo ineficiente
+            y peligroso que puede llegar a ser los medios tradicionales de castigo
+            y encarselamiento, como la carcel o reformatorios <br/>
+            por esto hemos creado la Iniciativa de Reforma y apollo Ciudadano de la
+            Fundación NewDay, para todos aquellos ciudadanos que se encuentren con
+            dificultades <br/>
+            tambien aporta opciones y alternativas a los ciudadanos que se encuentren
+            condenados a reformatorios o carceles, para que puedan tener una segunda oportunidad
+            y puedan reinsertarse a la sociedad de manera productiva y positiva.
         </div>
       </section>
 
@@ -52,17 +56,17 @@ function Apollo() {
       </div>
 
       <div className="servicios-grid">
-        {programas.map((programa) => (
+        {programas_apollo.map((programas_apollo) => (
           <div
-            key={programa.nombre}
+            key={programas_apollo.nombre}
             className="servicio-card"
           >
             <div className="imagenes_cuadradas">
-              <img src={programa.imagen} alt={programa.nombre} />
+              <img src={programas_apollo.imagen} alt={programas_apollo.nombre} />
             </div>
 
-            <span>{programa.nombre}</span>
-            <span>{programa.texto}</span>
+            <span>{programas_apollo.nombre}</span>
+            <span>{programas_apollo.texto}</span>
           </div>
         ))}
       </div>
@@ -72,9 +76,9 @@ function Apollo() {
       <div className="encabezado">Inscripción</div>
 
       <div>
-        Si desea obtener más información sobre nuestros programas de investigación
-        o formalizar su inscripción, ingrese su IMC en el siguiente campo. 
-        Un representante de la Fundación se pondrá en contacto con usted
+        Si desea obtener más información sobre nuestros programas de apollo
+        y reforma o formalizar su inscripción, ingrese su IMC en el siguiente 
+        campo. Un representante de la Fundación se pondrá en contacto con usted
         para brindarle asistencia y continuar con el proceso correspondiente.
         
         <br />
