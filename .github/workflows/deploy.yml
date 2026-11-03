@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: npm run build
         # En Actions, vite.config.js deriva la base del nombre del repositorio
-        # (por ejemplo '/NewDay_web/') para publicar correctamente en Pages.
+        # (por ejemplo '/NewDay_web.github.io/') para publicar en Pages.
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
