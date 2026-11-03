@@ -2,13 +2,13 @@ import { Link } from 'react-router';
 
 const programas = [
   {
-    nombre: 'tiros',
+    nombre: 'Investigacion',
     imagen: './imagenes/Investigacion.png',
     texto: 'apollo y financiamiento de proyectos de investigación'
   },
   {
-    nombre: 'soldados',
-    imagen: './imagenes/formacion.png',
+    nombre: 'formacion',
+    imagen: './imagenes/Formacion.png',
     texto: 'formacion y educacion cientifica y tecnologica'
   },
 ];
