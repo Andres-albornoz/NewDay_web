@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router';
 
-const servicios = [
+const programas = [
   {
     nombre: 'tiros',
     imagen: './imagenes/tiros.png',
@@ -19,7 +19,7 @@ function Seguridad() {
     <>
       <section className="banner-container">
         <Link to="/nosotros">
-          <img src="./imagenes/seguridad.png" alt="fondo" />
+          <img src="./imagenes/Seguridad.png" alt="fondo" />
         </Link>
 
         <div>
@@ -42,8 +42,8 @@ function Seguridad() {
         y militar para quienes deseen incorporarse a las fuerzas del orden
         y contribuir directamente a la seguridad de nuestra ciudad.
 
-        <br></br>
-        <br></br>
+        <br/>
+        <br/>
 
         Estos programas buscan brindar apoyo y oportunidades a los ciudadanos
         interesados en formar parte de las instituciones de seguridad,
@@ -53,17 +53,17 @@ function Seguridad() {
       </div>
 
       <div className="servicios-grid">
-        {servicios.map((servicio) => (
+        {programas.map((programa) => (
           <div
-            key={servicio.nombre}
+            key={programa.nombre}
             className="servicio-card"
           >
             <div className="imagenes_cuadradas">
-              <img src={servicio.imagen} alt={servicio.nombre} />
+              <img src={programa.imagen} alt={programa.nombre} />
             </div>
 
-            <span>{servicio.nombre}</span>
-            <span>{servicio.texto}</span>
+            <span>{programa.nombre}</span>
+            <span>{programa.texto}</span>
           </div>
         ))}
       </div>
@@ -74,13 +74,20 @@ function Seguridad() {
 
       <div>
         Si desea obtener más información sobre nuestros programas de seguridad
-        o formalizar su inscripción, ingrese su NMC en el siguiente campo.
+        o formalizar su inscripción, ingrese su IMC en el siguiente campo. 
         Un representante de la Fundación se pondrá en contacto con usted
         para brindarle asistencia y continuar con el proceso correspondiente.
-      </div>
 
-      <label htmlFor="NMC">NMC:</label>
-      <input type="text" id="NMC" placeholder="Escribe tu NMC"></input>
+        <br/>
+        <br/>
+        <label htmlFor="IMC">IMC:</label>
+        <input type="text" id="IMC" placeholder="Escribe tu IMC"></input>
+        <br/>
+        <br/>
+
+        Este programa también funciona como complemento de la Iniciativa de
+        Reforma Ciudadana
+      </div>
     </>
   );
 }

@@ -2,6 +2,8 @@ import { Route, Routes } from 'react-router'
 import Layout from './core/Layout.jsx'
 import Index from './pages/index.jsx'
 import Seguridad from './pages/seguridad.jsx'
+import Investigacion from './pages/investigacion.jsx'
+import Apollo from './pages/Apollo.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -10,6 +12,8 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<Index />} />
         <Route path="Seguridad" element={<Seguridad />} />
+        <Route path="Investigacion" element={<Investigacion />} />
+        <Route path="Apollo" element={<Apollo />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

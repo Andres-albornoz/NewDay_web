@@ -7,14 +7,14 @@ const servicios = [
     enlace: '/seguridad'
   },
   {
-    nombre: 'Científico',
+    nombre: 'Investigacion',
     imagen: './imagenes/cientifico.png',
-    enlace: '/cientifico'
+    enlace: '/Investigacion'
   },
   {
-    nombre: 'Apollos',
-    imagen: './imagenes/Apollos.png',
-    enlace: '/apollos'
+    nombre: 'Apollo',
+    imagen: './imagenes/Apollo.png',
+    enlace: '/Apollo'
   },
 ];
 

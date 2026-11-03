@@ -10,10 +10,10 @@ function Layout() {
         <nav>
           |
           <NavLink to="/">home</NavLink> |
-          <NavLink to="/seguridad">seguridad</NavLink> |
-          <NavLink to="/investigacion">investigacion</NavLink> |
-          <NavLink to="/reformacion">reformacion</NavLink> |
-          <input type="text" id="NMC" placeholder="Escribe tu NMC"></input>
+          <NavLink to="/Seguridad">Seguridad</NavLink> |
+          <NavLink to="/Investigacion">Investigacion</NavLink> |
+          <NavLink to="/Apollo">Apollo</NavLink> |
+          <input type="text" id="IMC" placeholder="Escribe tu IMC"></input>
           |
         </nav>
       </header>
