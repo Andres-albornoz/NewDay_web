@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router'
 import Layout from './core/Layout.jsx'
 import Index from './pages/index.jsx'
 import Seguridad from './pages/seguridad.jsx'
-import Investigacion from './pages/investigacion.jsx'
+import Investigacion from './pages/Investigacion.jsx'
 import Apollo from './pages/Apollo.jsx'
 import NotFound from './pages/NotFound.jsx'
 
