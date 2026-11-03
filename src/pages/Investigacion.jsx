@@ -52,17 +52,17 @@ function Investigacion() {
       </div>
 
       <div className="servicios-grid">
-        {programas.map((programa) => (
+        {programas_Investigacion.map((programas_Investigacion) => (
           <div
-            key={programa.nombre}
+            key={programas_Investigacion.nombre}
             className="servicio-card"
           >
             <div className="imagenes_cuadradas">
-              <img src={programa.imagen} alt={programa.nombre} />
+              <img src={programas_Investigacion.imagen} alt={programas_Investigacion.nombre} />
             </div>
 
-            <span>{programa.nombre}</span>
-            <span>{programa.texto}</span>
+            <span>{programas_Investigacion.nombre}</span>
+            <span>{programas_Investigacion.texto}</span>
           </div>
         ))}
       </div>
