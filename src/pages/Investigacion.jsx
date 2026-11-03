@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 const programas = [
   {
     nombre: 'tiros',
-    imagen: './imagenes/investigacion.png',
+    imagen: './imagenes/Investigacion.png',
     texto: 'apollo y financiamiento de proyectos de investigación'
   },
   {

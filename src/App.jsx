@@ -12,7 +12,7 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<Index />} />
         <Route path="Seguridad" element={<Seguridad />} />
-        <Route path="investigacion" element={<investigacion />} />
+        <Route path="Investigacion" element={<Investigacion />} />
         <Route path="Apollo" element={<Apollo />} />
         <Route path="*" element={<NotFound />} />
       </Route>
