@@ -3,12 +3,12 @@ import { Link } from 'react-router';
 const programas_Investigacion = [
   {
     nombre: 'Investigacion',
-    imagen: '/imagenes/Investigacion.png',
+    imagen: './imagenes/tiros.png',
     texto: 'apollo y financiamiento de proyectos de investigación'
   },
   {
     nombre: 'formacion',
-    imagen: '/imagenes/Formacion.png',
+    imagen: './imagenes/Formacion.png',
     texto: 'formacion y educacion cientifica y tecnologica'
   },
 ];
