@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 
-const programas = [
+const programas_Investigacion = [
   {
     nombre: 'Investigacion',
     imagen: './imagenes/Investigacion.png',
