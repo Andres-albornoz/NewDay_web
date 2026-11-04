@@ -12,7 +12,7 @@ function Layout() {
           <NavLink to="/">home</NavLink> |
           <NavLink to="/Seguridad">Seguridad</NavLink> |
           <NavLink to="/Investigacion">Investigacion</NavLink> |
-          <NavLink to="/Apollo">Apollo</NavLink> |
+          <NavLink to="/Apoyo">Apoyo</NavLink> |
           <input
             type="text"
             id="IMC-consulta"

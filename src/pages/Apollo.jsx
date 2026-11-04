@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import { imagen } from '../core/imagenes.js';
 
-const programas_apollo = [
+const programas_apoyo = [
   {
     nombre: 'acompañamiento',
     imagen: imagen('acompañamiento.png'),
@@ -19,7 +19,7 @@ function Apollo() {
     <>
       <section className="banner-container">
         <Link to="/nosotros">
-          <img src={imagen('apollo.png')} alt="fondo" />
+          <img src={imagen('apoyo .png')} alt="fondo" />
         </Link>
 
         <div>
@@ -27,7 +27,7 @@ function Apollo() {
             pueden llegar a tener muchos de nuestros ciudadanos, lo ineficiente
             y peligroso que puede llegar a ser los medios tradicionales de castigo
             y encarselamiento, como la carcel o reformatorios <br/>
-            por esto hemos creado la Iniciativa de Reforma y apollo Ciudadano de la
+            por esto hemos creado la Iniciativa de Reforma y apoyo  Ciudadano de la
             Fundación NewDay, para todos aquellos ciudadanos que se encuentren con
             dificultades <br/>
             tambien aporta opciones y alternativas a los ciudadanos que se encuentren
