@@ -5,7 +5,7 @@ const programas_Investigacion = [
   {
     nombre: 'Investigacion',
     imagen: imagen('investigacion.png'),
-    texto: 'apollo y financiamiento de proyectos de investigación'
+    texto: 'Apoyo y financiamiento de proyectos de investigación'
   },
   {
     nombre: 'formacion',

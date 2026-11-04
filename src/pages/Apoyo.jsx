@@ -14,7 +14,7 @@ const programas_apoyo = [
   },
 ];
 
-function Apollo() {
+function Apoyo() {
   return (
     <>
       <section className="banner-container">
@@ -56,17 +56,17 @@ function Apollo() {
       </div>
 
       <div className="servicios-grid">
-        {programas_apollo.map((programas_apollo) => (
+        {programas_Apoyo.map((programas_Apoyo) => (
           <div
-            key={programas_apollo.nombre}
+            key={programas_Apoyo.nombre}
             className="servicio-card"
           >
             <div className="imagenes_cuadradas">
-              <img src={programas_apollo.imagen} alt={programas_apollo.nombre} />
+              <img src={programas_Apoyo.imagen} alt={programas_Apoyo.nombre} />
             </div>
 
-            <span>{programas_apollo.nombre}</span>
-            <span>{programas_apollo.texto}</span>
+            <span>{programas_Apoyo.nombre}</span>
+            <span>{programas_Apoyo.texto}</span>
           </div>
         ))}
       </div>
@@ -76,7 +76,7 @@ function Apollo() {
       <div className="encabezado">Inscripción</div>
 
       <div>
-        Si desea obtener más información sobre nuestros programas de apollo
+        Si desea obtener más información sobre nuestros programas de Apoyo
         y reforma o formalizar su inscripción, ingrese su IMC en el siguiente 
         campo. Un representante de la Fundación se pondrá en contacto con usted
         para brindarle asistencia y continuar con el proceso correspondiente.
@@ -93,4 +93,4 @@ function Apollo() {
   );
 }
 
-export default Apollo;
+export default Apoyo;

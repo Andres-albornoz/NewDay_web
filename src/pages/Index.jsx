@@ -13,9 +13,9 @@ const servicios = [
     enlace: '/Investigacion'
   },
   {
-    nombre: 'Apollo',
-    imagen: imagen('apollo.png'),
-    enlace: '/Apollo'
+    nombre: 'Apoyo',
+    imagen: imagen('Apoyo.png'),
+    enlace: '/Apoyo'
   },
 ];
 
