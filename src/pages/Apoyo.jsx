@@ -19,7 +19,7 @@ function Apoyo() {
     <>
       <section className="banner-container">
         <Link to="/nosotros">
-          <img src={imagen('apoyo .png')} alt="fondo" />
+          <img src={imagen('apoyo.png')} alt="fondo" />
         </Link>
 
         <div>
@@ -56,17 +56,17 @@ function Apoyo() {
       </div>
 
       <div className="servicios-grid">
-        {programas_Apoyo.map((programas_Apoyo) => (
+        {programas_apoyo.map((programa) => (
           <div
-            key={programas_Apoyo.nombre}
+            key={programa.nombre}
             className="servicio-card"
           >
             <div className="imagenes_cuadradas">
-              <img src={programas_Apoyo.imagen} alt={programas_Apoyo.nombre} />
+              <img src={programa.imagen} alt={programa.nombre} />
             </div>
 
-            <span>{programas_Apoyo.nombre}</span>
-            <span>{programas_Apoyo.texto}</span>
+            <span>{programa.nombre}</span>
+            <span>{programa.texto}</span>
           </div>
         ))}
       </div>

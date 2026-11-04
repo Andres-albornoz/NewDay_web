@@ -14,7 +14,7 @@ const servicios = [
   },
   {
     nombre: 'Apoyo',
-    imagen: imagen('Apoyo.png'),
+    imagen: imagen('apoyo.png'),
     enlace: '/Apoyo'
   },
 ];
