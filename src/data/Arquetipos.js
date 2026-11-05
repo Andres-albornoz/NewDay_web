@@ -1,7 +1,7 @@
 const Arquetipos = [
     {
         id: 'ARQ_01',
-        nombre: 'intelectual',
+        nombre: 'Intelectual',
         roles: ['ROL_In_01', 'ROL_In_02', 'ROL_In_03'],
         descripcion: 'también conocido como "arquetipo académico", se caracteriza por una alta capacidad intelectual y un amplio conocimiento adquirido mediante el estudio y la investigación',
     },

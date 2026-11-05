@@ -1,4 +1,4 @@
-const Roles = [
+export const Roles = [
     {
         id: 'ROL_In_01',
         id_ARQ: 'ARQ_01',

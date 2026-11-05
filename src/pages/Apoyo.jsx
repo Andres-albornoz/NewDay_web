@@ -27,8 +27,8 @@ function Apoyo() {
             pueden llegar a tener muchos de nuestros ciudadanos, lo ineficiente
             y peligroso que puede llegar a ser los medios tradicionales de castigo
             y encarselamiento, como la carcel o reformatorios <br/>
-            por esto hemos creado la Iniciativa de Reforma y apoyo  Ciudadano de la
-            Fundación NewDay, para todos aquellos ciudadanos que se encuentren con
+            por esto hemos creado <strong>la Iniciativa de Reforma y apoyo  Ciudadano de la
+            Fundación NewDay</strong>, para todos aquellos ciudadanos que se encuentren con
             dificultades <br/>
             tambien aporta opciones y alternativas a los ciudadanos que se encuentren
             condenados a reformatorios o carceles, para que puedan tener una segunda oportunidad

@@ -20,6 +20,9 @@ function Layout() {
             placeholder="Escribe tu IMC"
           />
           |
+          
+          <NavLink to="/Home2">Home2</NavLink> |
+          <NavLink to="/Crea">Crea</NavLink> |
         </nav>
       </header>
 

@@ -27,8 +27,8 @@ function Seguridad() {
           de seguridad dentro de nuestra comunidad y en toda la ciudad de
           NewDay. Asimismo, reconocemos el interés de muchos ciudadanos en
           contribuir activamente a la protección de su entorno. Por este
-          motivo, hemos creado la Iniciativa de Seguridad de la Fundación
-          NewDay, destinada a promover la formación y participación ciudadana
+          motivo, hemos creado <strong>la Iniciativa de Seguridad de la Fundación
+          NewDay</strong>, destinada a promover la formación y participación ciudadana
           en materia de seguridad.
         </div>
       </section>

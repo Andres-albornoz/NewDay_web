@@ -4,7 +4,6 @@ const PersonajeVAcio = () => ({
     // Información básica
     nombre: '',
     edad: 0,
-    historias: 0,
 
     // Configuración
     arquetipo: 'ARQ_01',
@@ -34,11 +33,20 @@ const PersonajeVAcio = () => ({
         espiritu: { valor: 3, estado: '/' }
     },
 
+    estadisticas: {
+        Fisico: 0, 
+        Ingenio: 0, 
+        Lavia: 0, 
+        Percepción: 0, 
+        Herramientas: 0
+    },
+
     // Conocimientos básicos
     conocimientos_basicos: {},
 
     // Progresión
     puntos: {
+        historias: 0,
         aprendizajes: {
             disponibles: 20,
             conseguidos: 0
@@ -59,7 +67,6 @@ const PersonajeEjemplo = {
     // Información básica
     nombre: 'John Doe',
     edad: 30,
-    historias: 1,
 
     // Configuración
     arquetipo: 'ARQ_01',
@@ -89,11 +96,20 @@ const PersonajeEjemplo = {
         espiritu: { valor: 3, estado: '/' }
     },
 
+    estadisticas: {
+        Fisico: 0, 
+        Ingenio: 2, 
+        Lavia: 2, 
+        Percepción: 2, 
+        Herramientas: 1
+    },
+
     // Conocimientos básicos
     conocimientos_basicos: {},
 
     // Progresión
     puntos: {
+        historias: 1,
         aprendizajes: {
             disponibles: 20,
             conseguidos: 0
